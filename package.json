@@ -1,0 +1,101 @@
+{
+  "name": "angga-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio website of Angga Rakhmansyah - Computer Science Student & Web Developer",
+  "author": {
+    "name": "Angga Rakhmansyah",
+    "email": "angga@muslim.com",
+    "url": "https://anggasyh.my.id"
+  },
+  "keywords": [
+    "portfolio",
+    "nextjs",
+    "react",
+    "typescript",
+    "tailwindcss",
+    "framer-motion",
+    "web-developer",
+    "computer-science"
+  ],
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "type-check": "tsc --noEmit",
+    "preview": "next build && next start",
+    "clean": "rm -rf .next out node_modules/.cache",
+    "analyze": "cross-env ANALYZE=true next build"
+  },
+  "dependencies": {
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@upstash/redis": "^1.38.0",
+    "cannon-es": "^0.20.0",
+    "clsx": "^2.1.1",
+    "critters": "^0.0.23",
+    "framer-motion": "^11.5.4",
+    "jose": "^6.2.3",
+    "lucide-react": "^0.439.0",
+    "marked": "^18.0.3",
+    "next": "^15.0.0",
+    "next-themes": "^0.3.0",
+    "nodemailer": "^9.0.1",
+    "postgres": "^3.4.9",
+    "postprocessing": "^6.39.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.2",
+    "three": "^0.169.0"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^15.0.0",
+    "@svgr/webpack": "^8.1.0",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "@tailwindcss/typography": "^0.5.16",
+    "@types/node": "^22.0.0",
+    "@types/nodemailer": "^8.0.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@types/three": "^0.186.0",
+    "autoprefixer": "^10.4.21",
+    "cross-env": "^7.0.3",
+    "cssnano": "^7.0.7",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^15.0.0",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.6.0"
+  },
+  "overrides": {
+    "postcss": "^8.5.10",
+    "nodemailer": "^9.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angga-syah/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/angga-syah/portfolio/issues"
+  },
+  "homepage": "https://anggasyh.my.id",
+  "license": "MIT"
+}

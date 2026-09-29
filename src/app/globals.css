@@ -1,0 +1,85 @@
+/* Hallmark · genre: modern-minimal · macrostructure: asymmetric-hero (marketing) / long-document (content) / workbench (app) · design-system: design.md · designed-as-app */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-sans: var(--font-inter), system-ui, sans-serif;
+    --font-mono: var(--font-mono), "JetBrains Mono", monospace;
+  }
+
+  * { box-sizing: border-box; padding: 0; margin: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-sans);
+    @apply bg-zinc-950 text-zinc-100;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Light mode override */
+  .light body, body.light {
+    @apply bg-zinc-50 text-zinc-900;
+  }
+}
+
+@layer components {
+  .container { @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8; }
+  .section-padding { @apply py-20 md:py-28; }
+
+  /* Monospace numbers — finance terminal feel */
+  .font-data {
+    font-family: var(--font-mono);
+    @apply tabular-nums;
+  }
+
+  /* Display face — headings only, never body copy */
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  /* Primary button — emerald */
+  .btn-primary {
+    @apply bg-emerald-600 hover:bg-emerald-500 text-white font-medium
+           py-2.5 px-6 rounded-lg transition-colors duration-200
+           focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-zinc-950;
+  }
+
+  /* Secondary button */
+  .btn-secondary {
+    @apply border border-zinc-700 hover:border-emerald-500
+           text-zinc-400 hover:text-emerald-400
+           font-medium py-2.5 px-6 rounded-lg
+           transition-colors duration-200
+           focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-zinc-950;
+  }
+
+  /* Accent text */
+  .text-accent { @apply text-emerald-500 dark:text-emerald-400; }
+
+
+  /* Card */
+  .card {
+    @apply bg-zinc-900 rounded-xl border border-zinc-800
+           transition-colors duration-200 hover:border-zinc-700 p-6;
+  }
+
+  /* Subtle graph-paper grid for sections */
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #3f3f46; border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: #52525b; }
+
+::selection { background-color: rgba(16, 185, 129, 0.2); }
