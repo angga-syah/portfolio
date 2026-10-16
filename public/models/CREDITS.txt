@@ -1,0 +1,4 @@
+3D models by Kenney (www.kenney.nl), released under CC0 1.0 Universal:
+Car Kit, City Kit (Roads), Racing Kit, Nature Kit, Furniture Kit.
+They are packed into world.<hash>.glb by scripts/pack-models.mjs from the
+sources in assets/models. The kit licenses are the LICENSE-*.txt files here.
